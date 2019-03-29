@@ -1,0 +1,5 @@
+My program takes 4.06268 minutes in total
+it retrieves token "acow" in 0.0315333 min
+it retrieves token "yhoo" in 0.07315 min
+total web documents are 198362
+total text documents are 503473

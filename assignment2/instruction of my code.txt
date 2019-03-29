@@ -1,0 +1,11 @@
+My program can run on Eclipse Oxygen.2 Release(4.7.2) 2017.  My JRE version is java 9.0.4.
+Before run my program, please build a folder named data on Macintosh HD(mac) and put result.trectext and result.trecweb
+in this folder. In addition, you may optionally generate folders indextext and indexweb in folder data.
+
+the java file MyIndexWriter will read information of result.trectext and result.trecweb and write them into 
+three txt files: dictionarytermfile.txt, docidnofile.txt, postingfile.txt, other files are used for temporarily 
+store information to avoid out of memory
+
+the java file MyIndexReader will read all information from three documents I generated before
+
+you can run my program through entrance java file HW2Main.java
