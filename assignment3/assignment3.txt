@@ -1,0 +1,26 @@
+a.How long it takes to finish 4 queries
+
+Each time it takes different time for my program to finish queries, but the average time is 1.1 min
+
+
+b.retrieval result of 4 queries
+
+(1) if miu = 1000
+see screenshot miu = 1000(1) and miu = 1000(2)
+
+(2) if miu = 2000
+see screenshot miu = 2000(1) and miu = 2000(2)
+
+
+c.a paragraph on how to tune µ, and its effect on the query results.
+
+    When a query word exists in a document, we want µ to be close to 0 to make the query result close to the true probability, so that p(w|D) = c(w,D)/|D|(the smaller the µ, the closer p(w|D) toward the true probability). If unfortunately µ is big, query result become bigger than it's supposed to be. Query result is affected by collection probability, p(w|REF). 
+
+	When a query word doesn't exist in a document, p(w|D) is approaching 0 when µ approaches 0 and p(w|D) is approaching p(w|REF) when µ approaches positive infinity. In this case, we don't want µ to approach 0 because we'd like to avoid zero p(w|D) and avoid zero value of total probability of a query (more than one word). 
+
+	As a result, if p(w|REF) is a small value, we want to make µ relatively big to avoid a low query result (as of true query result) when a query word doesn't exist in a document. If p(w|REF) is a big value,  we want to make µ relatively small to avoid a high query result (as of true query result) when a query word exists in a document
+
+
+d. Java version I used for assignment
+
+I used java 8 for this assignment
